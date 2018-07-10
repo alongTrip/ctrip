@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>携程登入页</title>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<style>
+		*{padding:0;margin:0;}
+		a{text-decoration:none;color:#747474;}
+		.wrap{height:60px; padding-top:18px; }
+		.main{width:1000px; margin:auto; }
+		.wrap .top{width:126px; height:41px; margin-left:75px;}
+		.wrap .top img{width:100%; height:100%; } 
+		.title{width:100%; line-height:32px; text-align:center; background:#fffcd8; color:#747470; font-size:12px; }
+		/*.title i{display:inline-block;color:#fff;font-size:18px;background:#feaa09;}*/
+		.banner{width:100%; height:540px; background:url(images/img2.jpg) no-repeat -190px 0 ; }
+		.banner .banner_1{position:relative; }
+		.box{width:320px; height:407px; border:1px solid #ccc; border-radius:5px; padding:13px 30px 0; font-family:"宋体"; background:#fff; position:relative; position:absolute; top:38px; right:70px; }
+		.box_top{line-height:52px; text-align:right; font-size:13px; color:#747474; }
+		.box_top span{font-size:19px; font-weight:bold; float:left; color:#111111; }
+		.box .inp{width:294px; height:38px; color:#ccc7c5; outline:none; font-size:14px; border:0; }
+		.box .box_inp{text-align:right; position: relative; width:320px; height:38px; margin:7px 0 14px 0; border:1px solid #bbb}
+		.box .box_inp a{display:block; position: absolute; right:15px; top:13px; font-size:13px; color:#747474; }
+		.box_check{width:100%; height:28px; padding-top:15px; }
+		.box_check .box_check_1{width:10px; height:11px; float:left; border:1px solid #a5a5a5; }
+		.box_check .box_check_2{width:285px; float:left; font-size:13px; color:#7b7b7b; padding-left:6px; }
+		.box_check .box_check_2 span{float:right;}
+		.box_check .box_check_3{width:13px; line-height:13px;text-align:center;float:right; border-radius:50%; background:#b5b5b5;}
+		/*.box_check .box_check_3 i{color:red;opacity: 0.1}*/
+		.btn{width:100%; line-height:42px; background:#ff9a14; color:#fff; font-size:17px; text-align:center; border:none; border-radius:5px;}
+		.box .box_agree{width:100%; line-height:38px; font-size:13px; color:#9f9f9f; text-align:center; }
+		.box .box_agree span{display:inline-block; height:27px; border-bottom:1px dotted #ccc; padding-left:3px; }
+		.box .box_gps{margin-top:39px;font-size:12px;}
+		.box .box_gps li{display: inline-block; padding:0 8px; border-left:1px solid #dacfcf; text-align:center; }
+		.box .box_gps li a{color:#6f6a66;}
+		.box .box_gps li:nth-Child(1),.box .box_gps li:nth-Child(5){padding-left:0; border-left:0; }
+		.box .box_gps li:nth-Child(5){float:right; }
+		.box .box_gps li:nth-Child(5) a{color:#4482e5;}
+		.box .box_iconfont{margin-top:16px;width:320px;height:38px;}
+		.box .box_iconfont li{list-style:none;float:left;margin-right:12px;}
+		.box .box_iconfont li:nth-Child(1) i{font-size:31px;color:#3882e5;}
+		.box .box_iconfont li:nth-Child(2) i{font-size:34px;color:#69b7ff;}
+		.box .box_iconfont li:nth-Child(3) i{font-size:34px;color:#867fdf;}
+		.box .box_iconfont li:nth-Child(4) i{font-size:33px;color:#f5768b;}
+		.box .box_iconfont li:nth-Child(5) i{font-size:33px;color:#44c560;}
+		.box .box_right{width:33px; height:97px; background:#3882e5; color:#fff; text-align:center; line-height: 19px; font-size:14px; padding-top:7px; position:absolute; top:10px; right:-34px; }
+		.foot{height:57px; margin-top:55px; padding-top:21px; border-top:1px dashed #4482e5; text-align:center; }
+		.foot .foot_1{display: flex;justify-content:center;}
+		.foot .foot_1 li{display: inline-block; padding:0 8px; line-height:14px; font-size:12px; border-right:1px solid #ccc; }
+		.foot .foot_1 li a{color:#4c4c4c; }
+		.foot .foot_1 li:last-Child{border:none;}
+		.foot .foot_2{display: flex;justify-content:center;line-height:14px;font-size:12px;color:#4c4c4c;margin-top:5px;}
+	</style>
+</head>
+<body>
+<!-- header -->
+	<div class="wrap">
+		<div class="main">
+			<div class="top">
+				<a href=""><img src="images/img1.jpg" alt=""></a>
+			</div>
+		</div>
+	</div>
+<!-- title -->
+	<div class="title">依据《网络安全法》，为保障您相关功能的正常使用，请尽快完成手机验证。 新版《隐私政策》已上线，感谢您的支持。</div>
+<!-- conteent -->
+	<div class="banner">
+		<div class="main banner_1">
+			<!-- banner上的定位框 -->
+			<div class="box">
+				<div class="box_top"><span>携程账号登录</span>手机号查单></div>
+				<div class="box_inp">
+					<input type="text" class="inp" value="国内手机号/用户名/邮箱/卡号">
+				</div>
+				<div class="box_inp">
+					<input type="text"  class="inp" value="登录密码">
+					<a href="#">忘记密码</a>
+				</div>
+				<div class="box_check">
+					<div class="box_check_1"></div>
+					<p class="box_check_2">30天内自动登录<span>手机动态密码登入</span></p>
+					<div class="box_check_3"><!-- <i class="iconfont icon-arrowRight-copy-copy"></i> --></div>
+				</div>
+				<button type="submit" class="btn">登 录</button>
+				<div class="box_agree">登录即代表您同意我们的<span> 服务协议</span>和<span>隐私政策</span></div>
+				<ul class="box_gps">
+					<li><a href="##">境外手机</a></li>
+					<li><a href="##">公司客户</a></li>
+					<li><a href="##">合作卡</a></li>
+					<li><a href="##">携程通</a></li>
+					<li><a href="##">免费注册</a></li>
+				</ul>
+				<ul class="box_iconfont">
+					<li><i class="iconfont icon-zhifubao"></i></li>
+					<li><i class="iconfont icon-qqdisanfangicon"></i></li>
+					<li><i class="iconfont icon-baidu"></i></li>
+					<li><i class="iconfont icon-weibo-copy"></i></li>
+					<li><i class="iconfont icon-weixin1-copy"></i></li>
+				</ul>
+				<div class="box_right">扫<br/>码<br/>登<br/>录</div>
+			</div>	
+		</div>
+	</div>
+<!-- end -->
+	<div class="foot main">
+		<ul class="foot_1">
+			<li><a href="">网站导航</a></li>
+			<li><a href="">宾馆索引</a></li>
+			<li><a href="">用户协议</a></li>
+			<li><a href="">关于携程</a></li>
+			<li><a href="">企业公民</a></li>
+			<li><a href="">诚聘英才</a></li>
+			<li><a href="">分销联盟</a></li>
+			<li><a href="">企业礼品卡采购 </a></li>
+			<li><a href="">代理合作</a></li>
+			<li><a href="">广告业务</a></li>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">返回旧版</a></li>
+		</ul>
+		<p class="foot_2">Copyright © 1999-2018, ctrip.com. All rights reserved. </p>
+	</div>
+</body>
+<script>
+//考试题
+	// var str = 'abcdejgg'
+	// function num(str){
+	// 	var a = Object.prototype.toString.call(str)
+	// 	var reg = /\w+/g
+	// 	console.log(a.match(reg)[1])
+	// }
+	// num(str)
+	// 
+	
+</script>
+</html>

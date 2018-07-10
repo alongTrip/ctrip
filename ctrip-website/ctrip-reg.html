@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>携程注册页</title>
+	<style>
+		*{padding:0;margin:0;}
+		/*top*/
+		.wrap{line-height:43px;padding:7px 0;text-align:right;}
+		.main{width:1050px; margin:auto;}
+		.wrap .top{width:126px; height:43px;border-right:1px solid #ccc;padding-right:25px;float:left;}
+		.wrap .top img{width:100%; height:100%; } 
+		.wrap span{color:#333;font-size:12px;margin-right:50px;}
+		/*title*/
+		.title{margin-top:20px;color:#333;font-size:12px;height:18px;}
+		ul li {display:inline-block;width:323px;height:18px;margin-left:10px;/*background:gray;*/display:flex;align-items:center;position:relative;float:left;}
+
+		.titleBox_1{width:265px;height:5px;background-color: #acd252;border-radius:30px;margin-right:10px;}
+		.titleBox_2{width:18px;height:18px;border-radius:50%;background-color: #acd252;position:absolute;right:53px;}
+		.title_2 .titleBox_1,.title_3 .titleBox_1{background-color: #ddd;}
+		.title_2 .titleBox_2,.title_3 .titleBox_2{background-color: #ddd;}
+		/*正式注册页*/
+		.login{margin-top:30px;}
+		/*.login input{height:38px;margin-right:20px;border:none;border:1px solid #ccc;}*/
+
+		.login_1,.login_2,.login_3,.login_4{width:100%;height:40px;padding:10px 0;background:#fff;}
+		/*.login_1 span{display:inline-block;width:130px;line-height:40px;margin-right:10px;text-align:right;color:#333;font-size:14px;}*/
+		.login span{display:block;float:left;width:130px;line-height:40px;text-align:right;margin-right:10px;}
+		.login .login_center{width:300px;height:40px;background:#e8e8e8;float:left;position:relative;text-align:center;line-height:40px;font-size:14px;color:#4d4d4d;}
+		.login_2 .login_center .login_center_1{width:36px;height:37px;border:1px solid #ccc;position:absolute;top:0px;left:0;line-height:37px;text-align:center;z-index:1;background:#fff;color:#8e8e8e;cursor:crosshair;}
+		.login_2 .login_center .login_center_2{width:19px;height:40px;position:absolute;top:0px;left:0;background:#7ac23c;}
+		.login .login_3 .login_center{background:#fff;border:1px solid #ccc;width:298px;height:38px;position:relative;}
+		.login .login_3 .login_center a{display:block;position:absolute;top:0;right:16px;text-decoration:none;font-size:12px;}
+		.login .end-inp{border:0;width:288px;height:33px;padding-left:10px;font-size:14px;color:#999;}
+	</style>
+</head>
+<body>
+<!-- top -->
+	<div class="wrap">
+		<div class="main">
+			<div class="top">
+				<a href=""><img src="images/img1.jpg" alt=""></a>
+			</div>
+			<span>客服中心</span>
+		</div>
+	</div>
+<!-- title -->
+<ul class="title main">
+	<li class="title_1">
+		<div class="titleBox_1"></div>
+		<div class="titleBox_2"></div>
+		<span>验证手机</span>
+	</li>
+	<li class="title_2">
+		<div class="titleBox_1"></div>
+		<div class="titleBox_2"></div>
+		<span>设置密码</span>
+	</li>
+	<li class="title_3">
+		<div class="titleBox_1"></div>
+		<div class="titleBox_2"></div>
+		<span>注册成功</span>
+	</li>
+</ul>
+<!-- 正式注册页 -->
+<div class="login main">
+		<!-- <div>手机号<input type="text" value="中国大陆86"><input type="text"></div> -->
+		<!-- 滑块验证<p></p>
+		短信验证 <input type="text">
+		<p>	</p>
+		<button>下一步，设置密码</button>
+		<p><a href="">注册遇到问题</a></p> -->
+		<div class="login_1">
+			<!-- <span>手机号</span>
+			<div class="loginBox_1">
+				<input type="text" class="inp1">
+				<input type="text" class="inp2">
+			</div>
+			<div class="loginBox_2"></div> -->
+			<span>手机号</span>
+			<div class="login_center">
+				
+			</div>
+		</div>
+		<div class="login_2">
+			<span>滑块验证</span>
+			<div class="login_center">
+				请拖动滑块，拖动到最右
+				<div class="login_center_2"></div>
+				<div class="login_center_1">>></div>
+			</div>
+		</div>
+		<div class="login_3">
+			<span>短信验证码</span>
+			<div class="login_center">
+				<input type="text" placeholder="6位数字" class="end-inp">
+				<a href="jsvascript:;">发送验证码</a>
+			</div>
+		</div>
+		<div class="login_4"></div>
+</div>
+</body>
+</html>
